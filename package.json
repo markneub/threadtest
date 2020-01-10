@@ -14,6 +14,7 @@
   "main": "background.js",
   "dependencies": {
     "core-js": "^3.4.4",
+    "threads": "^1.0.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -29,6 +30,7 @@
     "prettier": "^1.19.1",
     "sass": "^1.23.7",
     "sass-loader": "^8.0.0",
+    "threads-plugin": "^1.2.0",
     "vue-cli-plugin-electron-builder": "^1.4.4",
     "vue-template-compiler": "^2.6.10"
   }
