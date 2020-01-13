@@ -1,13 +1,14 @@
 # threadtest
 
 ## How this project was initialized
+1.
 ```sh
 npm install -g @vue/cli
 vue create threadtest
 vue add electron-builder
 ```
-then add example worker from threads.js homepage to make sure example works correctly (it does)
-then adjust example to use a node builtin (child_process) and see that child_process is not set
+2. add example worker from threads.js homepage to make sure example works correctly (it does)
+3. adjust example to use a node builtin (`child_process`) and see that `child_process` is not set
 
 ## Project setup
 ```
