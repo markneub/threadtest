@@ -35,5 +35,8 @@
     "tiny-worker": "^2.3.0",
     "vue-cli-plugin-electron-builder": "^1.4.4",
     "vue-template-compiler": "^2.6.10"
+  },
+  "browser": {
+    "child_process": false
   }
 }
