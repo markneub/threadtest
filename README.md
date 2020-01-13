@@ -1,18 +1,16 @@
 # threadtest
 
 ## How this project was initialized
-1.
+
 ```sh
 npm install -g @vue/cli
 vue create threadtest
 vue add electron-builder
 ```
-2. add example worker from threads.js homepage to make sure example works correctly (it does)
-3. adjust example to use a node builtin (`child_process`) and see that `child_process` is not set
 
-## Project setup
+## Project setup (steps on top of )
 ```
-yarn
+yarn add threads threads-plugin
 ```
 
 **NOTE** This demo requires manually modifying the threads package in the same way, in two places, after installing node_modules with `yarn`.
@@ -22,6 +20,14 @@ yarn
 // const runningInNode = typeof process !== 'undefined' && process.arch !== 'browser' && 'pid' in process;
 const runningInNode = false
 ```
+
+## Expectation
+
+`child_process` should be a Node module with methods like `spawn` and `fork`.
+
+## Actual
+
+`child_process` is an empty object
 
 More info:
 https://github.com/andywer/threads.js/issues/199
